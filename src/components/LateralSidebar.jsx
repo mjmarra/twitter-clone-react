@@ -9,7 +9,7 @@ export default function LateralSidebar() {
 
 	const [usersToFollow, setUsersToFollow] = useState(null);
 
-	const URL = "http://localhost:5000/api/users";
+	const URL = "https://twitter-clone-backend-five.vercel.app/api/users";
 
 	useEffect(() => {
 		axios

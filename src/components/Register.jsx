@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { actionCreators } from "../redux/actions";
 import axios from "axios";
 
-const URL = "http://localhost:5000/api/users";
+const URL = "https://twitter-clone-backend-five.vercel.app/api/users";
 
 export default function Register() {
 	const dispatch = useDispatch();

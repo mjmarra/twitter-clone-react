@@ -8,7 +8,8 @@ export default function ModalContent({ hide, setUpdate }) {
 
 	// CREATE NEW TWEET
 	function handleSubmit(e) {
-		const URL_tweets = "http://localhost:5000/api/tweets";
+		const URL_tweets =
+			"https://twitter-clone-backend-five.vercel.app/api/tweets";
 		e.preventDefault();
 		axios
 			.post(

@@ -16,7 +16,8 @@ export default function Home() {
 	const loggedUser = useSelector((state) => state.userData.user);
 
 	const dispatch = useDispatch();
-	const URL_users = "http://localhost:5000/api/users/followed";
+	const URL_users =
+		"https://twitter-clone-backend-five.vercel.app/api/users/followed";
 	const [tweetContent, setTweetContent] = useState("");
 	const [update, setUpdate] = useState(false);
 
@@ -38,7 +39,8 @@ export default function Home() {
 
 	// CREATE NEW TWEET
 	function handleSubmit(e) {
-		const URL_tweets = "http://localhost:5000/api/tweets";
+		const URL_tweets =
+			"https://twitter-clone-backend-five.vercel.app/api/tweets";
 		e.preventDefault();
 		axios
 			.post(
