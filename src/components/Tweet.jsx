@@ -12,7 +12,7 @@ export default function Tweet({ tweet }) {
 	const loggedUser = useSelector((state) => state.userData.user);
 
 	useEffect(() => {
-		const URL = `https://twitter-clone-backend-five.vercel.app/api/users/${tweet.author.username}`;
+		const URL = `https://twitter-clone-backend-khaki.vercel.app/api/users/${tweet.author.username}`;
 		axios
 			.get(URL, {
 				headers: {
@@ -28,7 +28,7 @@ export default function Tweet({ tweet }) {
 	}, []);
 
 	function handleDelete() {
-		const URL = `https://twitter-clone-backend-five.vercel.app/api/tweets/${tweet._id}`;
+		const URL = `https://twitter-clone-backend-khaki.vercel.app/api/tweets/${tweet._id}`;
 		axios
 			.delete(URL, {
 				headers: {
@@ -47,7 +47,7 @@ export default function Tweet({ tweet }) {
 	function handleLike() {
 		console.log(loggedUser.id);
 		console.log(tweet._id);
-		const URL = `https://twitter-clone-backend-five.vercel.app/api/tweets/${tweet._id}`;
+		const URL = `https://twitter-clone-backend-khaki.vercel.app/api/tweets/${tweet._id}`;
 		axios
 			.put(
 				URL,

@@ -17,7 +17,7 @@ export default function ProfilePage() {
 
 	const [user, setUser] = useState({});
 	useEffect(() => {
-		const URL = `https://twitter-clone-backend-five.vercel.app/api/users/${username}`;
+		const URL = `https://twitter-clone-backend-khaki.vercel.app/api/users/${username}`;
 		axios
 			.get(URL)
 			.then((res) => {
@@ -31,7 +31,7 @@ export default function ProfilePage() {
 	}, [username]);
 
 	function handleFollow(e) {
-		const URL = `https://twitter-clone-backend-five.vercel.app/api/users/follow/${e.target.value}`;
+		const URL = `https://twitter-clone-backend-khaki.vercel.app/api/users/follow/${e.target.value}`;
 		axios
 			.put(
 				URL,
@@ -52,7 +52,7 @@ export default function ProfilePage() {
 	}
 
 	function handleUnfollow(e) {
-		const URL = `https://twitter-clone-backend-five.vercel.app/api/users/unfollow/${e.target.value}`;
+		const URL = `https://twitter-clone-backend-khaki.vercel.app/api/users/unfollow/${e.target.value}`;
 		axios
 			.put(
 				URL,
