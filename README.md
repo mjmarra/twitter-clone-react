@@ -1,7 +1,5 @@
 Twitter clone using React.js
 
-Check the site: twitter-clone-react-node.netlify.app
-
-Login https://twitter-clone-react-node.netlify.app/login with the following credentials o register as a new user:
+To check the site login at https://twitter-clone-react-node.netlify.app/login with the following credentials:
 
 Email: user@user.com Password: 123
