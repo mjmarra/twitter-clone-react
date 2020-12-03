@@ -9,6 +9,8 @@ import { useDispatch } from "react-redux";
 import { actionCreators } from "../redux/actions";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import useModal from "./useModal";
+import CustomModal from "./CustomModal";
 
 export default function ProfilePage() {
 	const { username } = useParams();
@@ -71,12 +73,16 @@ export default function ProfilePage() {
 				console.log(error);
 			});
 	}
+	const [update, setUpdate] = useState(false);
+
+	const { isShowing, toggle } = useModal();
 
 	return (
 		<div className="page-wrapper">
+			<CustomModal isShowing={isShowing} hide={toggle} setUpdate={setUpdate} />
 			<div className="row">
 				<div className="col-sm-3">
-					<Sidebar />
+					<Sidebar toggle={toggle} />
 				</div>
 				<div className="col-sm-9">
 					<div className="row">

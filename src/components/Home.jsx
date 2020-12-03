@@ -8,7 +8,6 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { actionCreators } from "../redux/actions";
-import { Link } from "react-router-dom";
 import useModal from "./useModal";
 import CustomModal from "./CustomModal";
 
