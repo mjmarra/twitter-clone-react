@@ -30,7 +30,7 @@ export default function Tweet({ tweet }) {
 	function handleDelete() {
 		const URL = `https://twitter-clone-backend-khaki.vercel.app/api/tweets/${tweet._id}`;
 		axios
-			.delete(URL, {
+			.get(URL, {
 				headers: {
 					Authorization: "Bearer " + loggedUser.accessToken,
 				},
