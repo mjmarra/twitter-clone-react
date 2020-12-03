@@ -61,7 +61,12 @@ export default function Sidebar({ toggle }) {
 					>
 						Twittear
 					</button>
-					<img src={tweetLogo} alt="Foto" className="avatar-small d-md-none" />
+					<img
+						onClick={toggle}
+						src={tweetLogo}
+						alt="Foto"
+						className="tweet-small-logo d-md-none"
+					/>
 				</div>
 			</div>
 

@@ -16,8 +16,10 @@ export default function ProfilePage() {
 	const { username } = useParams();
 	const dispatch = useDispatch();
 	const loggedUser = useSelector((state) => state.userData.user);
-
 	const [user, setUser] = useState({});
+	const [update, setUpdate] = useState(false);
+	const { isShowing, toggle } = useModal();
+
 	useEffect(() => {
 		const URL = `https://twitter-clone-backend-khaki.vercel.app/api/users/${username}`;
 		axios
@@ -30,7 +32,7 @@ export default function ProfilePage() {
 				console.log(error);
 			});
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [username]);
+	}, [username, update]);
 
 	function handleFollow(e) {
 		const URL = `https://twitter-clone-backend-khaki.vercel.app/api/users/follow/${e.target.value}`;
@@ -73,9 +75,6 @@ export default function ProfilePage() {
 				console.log(error);
 			});
 	}
-	const [update, setUpdate] = useState(false);
-
-	const { isShowing, toggle } = useModal();
 
 	return (
 		<div className="page-wrapper">

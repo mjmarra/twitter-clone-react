@@ -32,6 +32,16 @@ body {
 	height: 2rem;
 }
 
+.tweet-small-logo {
+	border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+}
+
+.tweet-small-logo:hover {
+	cursor: pointer;
+}
+
 hr {
 	border: 1px solid #253341;
 	background-color: #253341;
