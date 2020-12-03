@@ -33,7 +33,6 @@ export default function Tweet({ tweet }) {
 			.get(URL, {
 				headers: {
 					Authorization: "Bearer " + loggedUser.accessToken,
-					"Access-Control-Allow-Origin": "*",
 				},
 			})
 			.then((res) => {
