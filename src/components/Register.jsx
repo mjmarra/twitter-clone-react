@@ -54,7 +54,7 @@ export default function Register() {
 									onChange={(e) => setFirstname(e.target.value)}
 									value={firstname}
 									id="firstname"
-									placeholder="Enter your firstname..."
+									placeholder="Enter your firstname"
 									className="form-control bg-transparent text-light"
 									required
 								/>
@@ -67,7 +67,7 @@ export default function Register() {
 									onChange={(e) => setLastname(e.target.value)}
 									value={lastname}
 									id="lastname"
-									placeholder="Enter your lastname..."
+									placeholder="Enter your lastname"
 									className="form-control bg-transparent text-light"
 									required
 								/>
@@ -80,7 +80,7 @@ export default function Register() {
 									onChange={(e) => setUsername(e.target.value)}
 									value={username}
 									id="username"
-									placeholder="Enter your username..."
+									placeholder="Enter your username"
 									className="form-control bg-transparent text-light"
 									required
 								/>
@@ -93,7 +93,7 @@ export default function Register() {
 									onChange={(e) => setEmail(e.target.value)}
 									value={email}
 									id="email"
-									placeholder="Enter your email..."
+									placeholder="Enter your email"
 									className="form-control bg-transparent text-light"
 									required
 								/>
@@ -106,7 +106,7 @@ export default function Register() {
 									onChange={(e) => setPassword(e.target.value)}
 									value={password}
 									id="password"
-									placeholder="Enter your password..."
+									placeholder="Enter your password"
 									className="form-control bg-transparent text-light"
 									required
 								/>
